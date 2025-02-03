@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const productRouter = require('./Routes/ProductRoutes')
 
 app.use(express.json())
-
+console.log('changes')
 app.listen('5000', ()=> console.log('server running on 5000'))
 
 mongoose.connect('mongodb://localhost:27017/sample')
